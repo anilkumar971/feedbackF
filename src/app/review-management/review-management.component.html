@@ -1,0 +1,28 @@
+
+<div class="review-management">
+    <h2>Review Management</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Comments</th>
+          <th>Rating</th>
+          <th>Approved</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let feedback of feedbackList">
+          <td>{{ feedback.userName }}</td>
+          <td>{{ feedback.comments }}</td>
+          <td>{{ feedback.rating }}</td>
+          <td>{{ feedback.approved ? 'Yes' : 'No' }}</td>
+          <td>
+            <button *ngIf="!feedback.approved" (click)="approveFeedback(feedback.id!)">Approve</button>
+            <button (click)="deleteFeedback(feedback.id!)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

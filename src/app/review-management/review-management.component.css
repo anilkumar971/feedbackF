@@ -1,0 +1,25 @@
+.review-management {
+    max-width: 800px;
+    margin: auto;
+  }
+  .review-management h2 {
+    text-align: center;
+  }
+  .review-management table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .review-management th,
+  .review-management td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  .review-management th {
+    background-color: #f4f4f4;
+  }
+  .review-management button {
+    padding: 5px 10px;
+    margin: 2px;
+  }
+  
